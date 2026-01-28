@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import ProfileImage from '@/Sources/Profile.PNG';
+import ProfileImage from '@/Sources/profile.png';
 
 const About: React.FC = () => {
   return (

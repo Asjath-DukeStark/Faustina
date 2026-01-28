@@ -1,93 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Faustina McKenzie | Social Media Strategist</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              serif: ['"Playfair Display"', 'serif'],
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              cream: '#FDFCF5',
-              'warm-beige': '#F5F1E8',
-              'deep-black': '#1A1A1A',
-              'muted-brown': '#8C7851',
-              'soft-tan': '#E0D7C6',
-            },
-            animation: {
-              'grain': 'grain 8s steps(10) infinite',
-            },
-            keyframes: {
-              grain: {
-                '0%, 100%': { transform: 'translate(0, 0)' },
-                '10%': { transform: 'translate(-5%, -10%)' },
-                '20%': { transform: 'translate(-15%, 5%)' },
-                '30%': { transform: 'translate(7%, -25%)' },
-                '40%': { transform: 'translate(-5%, 25%)' },
-                '50%': { transform: 'translate(-15%, 10%)' },
-                '60%': { transform: 'translate(15%, 0%)' },
-                '70%': { transform: 'translate(0%, 15%)' },
-                '80%': { transform: 'translate(3%, 35%)' },
-                '90%': { transform: 'translate(-10%, 10%)' },
-              }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faustina McKenzie | Social Media Strategist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            cream: '#FDFCF5',
+            'warm-beige': '#F5F1E8',
+            'deep-black': '#1A1A1A',
+            'muted-brown': '#8C7851',
+            'soft-tan': '#E0D7C6',
+          },
+          animation: {
+            'grain': 'grain 8s steps(10) infinite',
+          },
+          keyframes: {
+            grain: {
+              '0%, 100%': { transform: 'translate(0, 0)' },
+              '10%': { transform: 'translate(-5%, -10%)' },
+              '20%': { transform: 'translate(-15%, 5%)' },
+              '30%': { transform: 'translate(7%, -25%)' },
+              '40%': { transform: 'translate(-5%, 25%)' },
+              '50%': { transform: 'translate(-15%, 10%)' },
+              '60%': { transform: 'translate(15%, 0%)' },
+              '70%': { transform: 'translate(0%, 15%)' },
+              '80%': { transform: 'translate(3%, 35%)' },
+              '90%': { transform: 'translate(-10%, 10%)' },
             }
           }
         }
       }
-    </script>
-    <style>
-      body {
-        background-color: #FDFCF5;
-        color: #1A1A1A;
-        overflow-x: hidden;
-      }
-      .grain-overlay {
-        position: fixed;
-        top: -100%;
-        left: -100%;
-        width: 300%;
-        height: 300%;
-        background-image: url("https://www.transparenttextures.com/patterns/film-grain.png");
-        pointer-events: none;
-        z-index: 9999;
-        opacity: 0.08;
-      }
-      ::selection {
-        background: #8C7851;
-        color: white;
-      }
-      /* Custom smooth scroll behavior */
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
+    }
+  </script>
+  <style>
+    body {
+      background-color: #FDFCF5;
+      color: #1A1A1A;
+      overflow-x: hidden;
+    }
 
-<link rel="stylesheet" href="/index.css">
-  <script type="importmap">
-{
-  "imports": {
-    "framer-motion": "https://esm.sh/framer-motion@^12.29.2",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react-intersection-observer": "https://esm.sh/react-intersection-observer@^10.0.2"
-  }
-}
-</script>
+    .grain-overlay {
+      position: fixed;
+      top: -100%;
+      left: -100%;
+      width: 300%;
+      height: 300%;
+      background-image: url("https://www.transparenttextures.com/patterns/film-grain.png");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.08;
+    }
+
+    ::selection {
+      background: #8C7851;
+      color: white;
+    }
+
+    /* Custom smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+
   <script type="module" crossorigin src="/assets/index-CGQIiUkq.js"></script>
 </head>
-  <body>
-    <div id="root"></div>
-    <div class="grain-overlay animate-grain"></div>
+
+<body>
+  <div id="root"></div>
+  <div class="grain-overlay animate-grain"></div>
 </body>
+
 </html>

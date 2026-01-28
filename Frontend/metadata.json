@@ -1,0 +1,9 @@
+
+{
+  "name": "Faustina McKenzie Portfolio",
+  "description": "A premium, cinematic portfolio for a Social Media Marketing Strategist & Content Creator featuring smooth animations, editorial design, and deep luxury aesthetics.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
